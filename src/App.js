@@ -4,7 +4,7 @@ import "./style.css";
 export default function App() {
 const[counter,setCounter]=React.useState(0)
 const[number,setNumber]=React.useState(25)
-const factorial =React.useMemo((number)=>{fact(number)},[])
+const factorial =React.useMemo((number)=>{fact(number)},[number])
 
   return (
     <div>
